@@ -1,0 +1,6 @@
+framework module Pods_BOLDUITests {
+  umbrella header "Pods-BOLDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

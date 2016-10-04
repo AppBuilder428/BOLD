@@ -1,0 +1,25 @@
+PODS:
+  - HexColors (2.3.0)
+  - MJCalendar (0.3.0):
+    - NSDate-Escort (~> 1.5)
+    - UIView+JMFrame
+  - NSDate-Escort (1.7.0)
+  - STZPopupView (1.0.2)
+  - UIView+JMFrame (0.1.2)
+
+DEPENDENCIES:
+  - HexColors (~> 2.3)
+  - MJCalendar (~> 0.3.0)
+  - NSDate-Escort
+  - STZPopupView
+
+SPEC CHECKSUMS:
+  HexColors: 6ad3947c3447a055a3aa8efa859def096351fe5f
+  MJCalendar: fded170474124dc14ae81868f7ffc69bc5438b6f
+  NSDate-Escort: 3469fefab423c094108c2e864416b61b6ac0edbc
+  STZPopupView: 4eb11a72c71d2942e23a4444d1bde40e563702e3
+  UIView+JMFrame: a907974c9d34b1c300aef85ae2a1a5af746f2b8a
+
+PODFILE CHECKSUM: 842af4c813af23f1649fd01f2854614c4a2c12fc
+
+COCOAPODS: 1.1.0.beta.1

@@ -1,0 +1,6 @@
+framework module UIView_JMFrame {
+  umbrella header "UIView+JMFrame-umbrella.h"
+
+  export *
+  module * { export * }
+}

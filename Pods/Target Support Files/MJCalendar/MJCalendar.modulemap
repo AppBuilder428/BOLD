@@ -1,0 +1,6 @@
+framework module MJCalendar {
+  umbrella header "MJCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
