@@ -827,7 +827,7 @@
                                                     <constraint firstAttribute="height" constant="44" id="U2F-nm-6Q2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                <state key="normal" title="Último Cambio ">
+                                                <state key="normal" title="Último cambio">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
