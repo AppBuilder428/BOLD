@@ -122,12 +122,15 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                     dispatch_async(dispatch_get_main_queue(), {
                         if (jsonData["ok"] as! Bool == true ){
                             
-                            self.headers = jsonData["data"]!["header"]! as! NSMutableArray
+                            let headers = jsonData["data"]!["header"]! as! NSArray
+
+                            self.headers = NSMutableArray.init(array: headers)
+
                             if (self.headers.count <= 4) {
                                 self.bgHeaderView.image = UIImage.init(named: "bg_border_all")
                             }
                             
-                            let headerdata = jsonData["data"]!["header"]! as! NSMutableArray
+                            let headerdata = jsonData["data"]!["header"]! as! NSArray
                             
                             var count = 0 as Int
                             for data in headerdata {
@@ -149,13 +152,13 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                                 count = count + 1
                             }
                             
-                            let carddsata = jsonData["data"]!["cards"]! as! NSMutableArray
-                            self.cards = carddsata
+                            let carddsata = jsonData["data"]!["cards"]! as! NSArray
+                            self.cards = NSMutableArray.init(array: carddsata)
                             self.tableView .reloadData()
                             
                             var itemCount = 0;
                             for data in carddsata {
-                                let vals = data.objectForKey("values") as! NSMutableArray
+                                let vals = data.objectForKey("values") as! NSArray
                                 itemCount += vals.count;
                             }
                             
@@ -204,7 +207,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         else {
             if self.cards.count > 0 {
                 let dict = self.cards[section - 1]
-                let vals = dict.objectForKey("values") as! NSMutableArray
+                let vals = dict.objectForKey("values") as! NSArray
                 return vals.count + 1
             }
             return 0
@@ -263,7 +266,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                 
                 let cell:CardTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CardTableViewCell
                 let dict = self.cards[indexPath.section - 1]
-                let vals = dict.objectForKey("values") as! NSMutableArray
+                let vals = dict.objectForKey("values") as! NSArray
                 let data = vals[indexPath.row - 1]
                 
                 let title = data.objectForKey("title") as! String

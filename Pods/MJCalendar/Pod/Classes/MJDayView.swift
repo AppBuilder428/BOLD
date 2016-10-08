@@ -114,7 +114,7 @@ public class MJDayView: MJComponentView {
     func didTap() {
         if let castedEvents = self.events {
             if castedEvents.count > 0 {
-                var dict = NSMutableDictionary()
+                let dict = NSMutableDictionary()
                 dict["data"] = castedEvents
                 dict["date"] = self.date
                 let noti = NSNotification.init(name: "dayDidTapped", object: self, userInfo: dict as [NSObject : AnyObject])

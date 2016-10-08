@@ -200,8 +200,9 @@ class ContadoresViewController: UIViewController, UITableViewDelegate, UITableVi
                     
                     dispatch_async(dispatch_get_main_queue(), {
                         if (jsonData["ok"] as! Bool == true ){
-                            let contadoresData = jsonData["data"]! as! NSMutableArray
-                            self.contadores = contadoresData
+
+                            let contadoresData = jsonData["data"]! as! NSArray
+                            self.contadores = NSMutableArray.init(array: contadoresData)
 
                             self.tableView .reloadData()
                         }

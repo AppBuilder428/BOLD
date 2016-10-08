@@ -306,8 +306,8 @@ class MainViewController: UIViewController, UIScrollViewDelegate, MJCalendarView
     }
     
     func randColor() -> UIColor? {
-        if rand() % 2 == 0 {
-            let colorIndex = Int(rand()) % self.colors.count
+        if arc4random() % 2 == 0 {
+            let colorIndex = Int(arc4random()) % self.colors.count
             let color = self.colors[colorIndex]
             return color
         }

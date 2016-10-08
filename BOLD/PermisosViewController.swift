@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PermisosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
+class PermisosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, PermisosDetailViewControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
@@ -312,6 +312,36 @@ class PermisosViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let data = self.permisosData![indexPath.row] as NSDictionary
+
+        self.performSegueWithIdentifier("permisosDetail", sender: data)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "permisosDetail" {
+            
+            let detailViewController = segue.destinationViewController as! PermisosDetailViewController
+            
+            detailViewController.permisosData = (sender as! NSDictionary)
+            detailViewController.delegate = self
+            
+        }
+    }
+    
+    func deletePemisor(controller:PermisosDetailViewController, permisosID:Int)
+    {
+        for i in 0...self.permisosData!.count - 1 {
+            let dictPermisos = self.permisosData![i] as NSDictionary
+            let idPermisos = dictPermisos.objectForKey("ID") as! Int
+            if permisosID == idPermisos {
+                self.permisosData!.removeAtIndex(i)
+                self.tableView .reloadData()
+                break
+            }
+        }
+    }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
 //        var scrollDirection as Scroll

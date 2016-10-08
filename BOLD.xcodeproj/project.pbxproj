@@ -20,6 +20,7 @@
 		542D16021D5364500081E801 /* CardTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542D16011D5364500081E801 /* CardTitleTableViewCell.swift */; };
 		54C44CA91D7ED7A2006E98C5 /* ContadoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44CA71D7ED7A2006E98C5 /* ContadoresTableViewCell.swift */; };
 		54C44CAA1D7ED7A2006E98C5 /* ContadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44CA81D7ED7A2006E98C5 /* ContadoresViewController.swift */; };
+		54EB1F411DA2B1A2003675A2 /* PermisosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB1F401DA2B1A2003675A2 /* PermisosDetailViewController.swift */; };
 		5BFE74066405BCD27BAAD6BE /* Pods_BOLD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C4DF92D002DF1A78C046D2 /* Pods_BOLD.framework */; };
 		842ECFF41D12AD6E004663C0 /* SiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ECFF31D12AD6E004663C0 /* SiteViewController.swift */; };
 		8453E01D1D0FB8450015DA28 /* PermisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453E01C1D0FB8450015DA28 /* PermisosViewController.swift */; };
@@ -77,6 +78,7 @@
 		542D16011D5364500081E801 /* CardTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTitleTableViewCell.swift; sourceTree = "<group>"; };
 		54C44CA71D7ED7A2006E98C5 /* ContadoresTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContadoresTableViewCell.swift; sourceTree = "<group>"; };
 		54C44CA81D7ED7A2006E98C5 /* ContadoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContadoresViewController.swift; sourceTree = "<group>"; };
+		54EB1F401DA2B1A2003675A2 /* PermisosDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermisosDetailViewController.swift; sourceTree = "<group>"; };
 		693A8C7757EB86C2613F3F36 /* Pods-BOLDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73A4201EACCFC871F75D01FD /* Pods-BOLD.release beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.release beta.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.release beta.xcconfig"; sourceTree = "<group>"; };
 		842ECFF31D12AD6E004663C0 /* SiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				542C86D61D67EF8200CE231B /* PermisosTableViewCell.swift */,
 				8453E01C1D0FB8450015DA28 /* PermisosViewController.swift */,
+				54EB1F401DA2B1A2003675A2 /* PermisosDetailViewController.swift */,
 				542C86D81D68642700CE231B /* AddPermisosViewController.swift */,
 				542C86DA1D68AAEF00CE231B /* AddPermisosNextStepViewController.swift */,
 			);
@@ -428,13 +431,16 @@
 					84ECF15E1D01135900AA0794 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 446UP3JLW6;
+						LastSwiftMigration = 0810;
 					};
 					84ECF1721D01135900AA0794 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 84ECF15E1D01135900AA0794;
 					};
 					84ECF17D1D01135900AA0794 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 84ECF15E1D01135900AA0794;
 					};
 				};
@@ -642,6 +648,7 @@
 				54C44CA91D7ED7A2006E98C5 /* ContadoresTableViewCell.swift in Sources */,
 				52C5DBDF1D0D654F00BC7F38 /* CalendarFlowLayout.swift in Sources */,
 				542C86D71D67EF8200CE231B /* PermisosTableViewCell.swift in Sources */,
+				54EB1F411DA2B1A2003675A2 /* PermisosDetailViewController.swift in Sources */,
 				8453E0201D0FB9000015DA28 /* PersonalViewController.swift in Sources */,
 				84ECF1BA1D02132F00AA0794 /* MenuViewController.swift in Sources */,
 				542D16021D5364500081E801 /* CardTitleTableViewCell.swift in Sources */,
@@ -769,6 +776,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 				WEB_SERVICE_BASE_URL = "http://88.87.204.22";
 			};
 			name = "Release beta";
@@ -782,6 +790,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BOLD.app/BOLD";
 			};
 			name = "Release beta";
@@ -794,6 +803,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = BOLD;
 				USES_XCTRUNNER = YES;
 			};
@@ -908,6 +918,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				WEB_SERVICE_BASE_URL = "http://soporte.gps-plan.com";
 			};
 			name = Debug;
@@ -933,6 +944,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 				WEB_SERVICE_BASE_URL = "http://soporte.gps-plan.com";
 			};
 			name = Release;
@@ -946,6 +958,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BOLD.app/BOLD";
 			};
 			name = Debug;
@@ -959,6 +972,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BOLD.app/BOLD";
 			};
 			name = Release;
@@ -971,6 +985,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = BOLD;
 				USES_XCTRUNNER = YES;
 			};
@@ -984,6 +999,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = BOLD;
 				USES_XCTRUNNER = YES;
 			};
