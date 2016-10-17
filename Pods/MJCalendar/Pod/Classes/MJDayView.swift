@@ -253,19 +253,19 @@ public class MJDayView: MJComponentView {
                 } else {
                     let dateFrom = dateFormatter.dateFromString((event["from"] as! String?)!)
 
-                    if event["detailedText"] as! String == "BILBAO" {
-                        lbl.text = dateFormatterTime.stringFromDate(dateFrom!)
-                    } else {
-                        lbl.text = event["detailedText"] as! String
-                    }
+//                    if event["detailedText"] as! String == "BILBAO" {
+//                        lbl.text = dateFormatterTime.stringFromDate(dateFrom!)
+//                    } else {
+                        lbl.text = event["monthText"] as! String
+//                    }
                     
-                    if event["detailedText"] as! String == "VACACIONES" {
-                        lbl.text = "VAC"
-                    }
-                    
-                    if event["detailedText"] as! String == "Sin asignar" {
-                        lbl.text = dateFormatterTime.stringFromDate(dateFrom!)
-                    }
+//                    if event["detailedText"] as! String == "VACACIONES" {
+//                        lbl.text = "VAC"
+//                    }
+//                    
+//                    if event["detailedText"] as! String == "Sin asignar" {
+//                        lbl.text = dateFormatterTime.stringFromDate(dateFrom!)
+//                    }
                     
                     if event["detailedText"]?.length > 0 {
                         lbl.backgroundColor = self.hexStringToUIColor(event["bgColor"] as! String)
