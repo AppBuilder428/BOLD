@@ -233,7 +233,8 @@ class PermisosDetailViewController: UIViewController{
         case 0:
             self.statusLabel.text = " Pendiente  "
             self.statusLabel.backgroundColor = UIColor.init(0, green: 135, blue: 255)
-            self.deleteButton.hidden = false
+//            self.deleteButton.hidden = false
+            self.deleteButton.hidden = true
             break;
         case 1:
             self.statusLabel.text = " Denegado  "
