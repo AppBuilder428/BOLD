@@ -380,7 +380,7 @@ class PermisosDetailViewController: UIViewController{
                 if let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
                     print(jsonData)
                     if let _  = jsonData["data"] {
-                        self.permisosData = jsonData["data"]![0] as? NSDictionary
+                        self.permisosData = (jsonData["data"] as! NSArray)[0] as? NSDictionary
                         self.updatePermisosData()
                     }
                 }
