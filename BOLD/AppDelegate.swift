@@ -160,7 +160,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func savePermisorData(permisosData: [NSDictionary]) {
         
         allPermisosData.removeAll()
-        
+        let permisosDataCount = permisosData.count
+        if (permisosDataCount == 0){
+            return;
+        }
         for i in 0...permisosData.count - 1 {
             
             let data = permisosData[i] as NSDictionary
