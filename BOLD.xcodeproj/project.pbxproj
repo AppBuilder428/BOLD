@@ -460,7 +460,7 @@
 				TargetAttributes = {
 					84ECF15E1D01135900AA0794 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 446UP3JLW6;
+						DevelopmentTeam = VK6PRMTH9U;
 						LastSwiftMigration = 0810;
 					};
 					84ECF1721D01135900AA0794 = {
@@ -903,14 +903,19 @@
 				BG_LOGO_NAME = logoPSSJD;
 				BG_MAIN_COLOR = FFCDD2;
 				BG_NAVIGATION_COLOR = D32F2F;
+<<<<<<< HEAD
 				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendarPSSJD;
+=======
+				BUNDLE_IDENTIFIER_SUFFIX = "com.gps-plan.PSSJD";
+>>>>>>> origin/master
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VK6PRMTH9U;
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bold.calendarTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gps-plan.com.PSSJD";
 				PRODUCT_NAME = "$(APP_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -1154,10 +1159,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VK6PRMTH9U;
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bold.calendarTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gps-plan.com.PSSJD";
 				PRODUCT_NAME = "$(APP_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -1183,10 +1189,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = VK6PRMTH9U;
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bold.calendarTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gps-plan.com.PSSJD";
 				PRODUCT_NAME = "$(APP_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
