@@ -25,6 +25,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var navigationView: UIView!
     @IBOutlet weak var scrollview: UIScrollView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var headerView: UIView!
     
     @IBOutlet weak var contentViewLCWidth: NSLayoutConstraint!
     @IBOutlet weak var contentViewLCHeight: NSLayoutConstraint!
@@ -47,9 +48,11 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         
         self.navigationView.backgroundColor = bgNavigationColor
-        self.scrollview.backgroundColor = bgMainColor
-        self.contentView.backgroundColor = bgMainColor
-        self.tableView.backgroundColor = bgMainColor
+        self.headerView.backgroundColor = bgNavigationColor
+
+//        self.scrollview.backgroundColor = bgMainColor
+//        self.contentView.backgroundColor = bgMainColor
+//        self.tableView.backgroundColor = bgMainColor
 
         // Do any additional setup after loading the view.
         img.layer.borderWidth = 1
@@ -240,7 +243,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
             cell.cardTitleLabel?.text = title
             cell.cardValueLabel?.text = val
             cell.selectionStyle = .None
-            cell.contentView.backgroundColor = bgMainColor
+//            cell.contentView.backgroundColor = bgMainColor
 
             if (indexPath.row + 4 == self.headers.count - 1) {
                 cell.cardBGView.image = UIImage(named: "bg_border_bottom")!
@@ -258,7 +261,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                 
                 cell.cardTitleLabel?.text = cardName as String
                 cell.selectionStyle = .None
-                cell.contentView.backgroundColor = bgMainColor
+//                cell.contentView.backgroundColor = bgMainColor
                 
                 return cell
             }
@@ -275,7 +278,7 @@ class PersonalViewController: UIViewController, UITableViewDelegate, UITableView
                 cell.cardTitleLabel?.text = title
                 cell.cardValueLabel?.text = val
                 cell.selectionStyle = .None
-                cell.contentView.backgroundColor = bgMainColor
+//                cell.contentView.backgroundColor = bgMainColor
 
                 if (indexPath.row == vals.count) {
                     cell.cardBGView.image = UIImage(named: "bg_border_bottom")!

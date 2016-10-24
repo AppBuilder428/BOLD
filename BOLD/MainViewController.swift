@@ -483,7 +483,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate, MJCalendarView
         let buttonFrame = CGRectMake(10.0, ht - 52.0 + 5, self.view.bounds.size.width-80, 40)
         let addNewButton = UIButton.init(type: UIButtonType.Custom)
         addNewButton.frame = buttonFrame
-        addNewButton.backgroundColor = UIColor.init(56, green: 142, blue: 61)
+        addNewButton.backgroundColor = bgNavigationColor
         addNewButton .setTitle("SOLICITAR NUEVO PERMISO", forState: UIControlState.Normal)
         addNewButton.titleLabel?.textColor = UIColor.whiteColor()
         addNewButton.titleLabel?.font = UIFont.boldSystemFontOfSize(13)

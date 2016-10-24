@@ -70,6 +70,7 @@ class AddPermisosViewController: UIViewController {
         
         self.selectedGroupPosition = -1
         self.selectedTipoPosition = -1
+        self.createButton.backgroundColor = bgNavigationColor
         
         if let _ = self.selectedDate {
             

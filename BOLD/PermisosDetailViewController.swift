@@ -48,7 +48,9 @@ class PermisosDetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationView.backgroundColor = bgNavigationColor
+        self.deleteButton.backgroundColor = bgNavigationColor
+
         self.updatePermisosData()
         
     }

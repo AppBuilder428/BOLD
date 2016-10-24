@@ -43,7 +43,7 @@ class PermisosViewController: UIViewController, UITableViewDelegate, UITableView
         self.orderSubView.layer.borderColor = UIColor.lightGrayColor().CGColor
         self.orderSubView.layer.cornerRadius = 5
         self.orderSubView.clipsToBounds = true
-        self.orderView.backgroundColor = bgMainColor
+//        self.orderView.backgroundColor = bgMainColor
         self.orderViewLCHeight.constant = 0
         self.view .layoutIfNeeded()
         

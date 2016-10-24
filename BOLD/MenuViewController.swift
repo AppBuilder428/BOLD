@@ -10,9 +10,12 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var usertxt: UILabel!
     @IBOutlet weak var fullnametxt: UILabel!
     @IBOutlet weak var statusView: UIView!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var linkButton: UIButton!
 
     
     let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
@@ -20,11 +23,15 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
+
+        self.headerView.backgroundColor = bgNavigationColor
         self.statusView.backgroundColor = bgNavigationColor
-        
+        self.logoImageView.image = UIImage.init(named: String.init(format: "%@1.png", logoName))
         usertxt.text = user
         fullnametxt.text = fullname
-        // Do any additional setup after loading the view.
+        
+//        self.linkButton .setTitle(serverDomain, forState: UIControlState.Normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +67,12 @@ class MenuViewController: UIViewController {
     }
     @IBAction func LogoutBtn(sender: AnyObject) {
         monthlycache.removeAllObjects();
+        
+        let ud = NSUserDefaults.standardUserDefaults()
+        ud.setObject(nil, forKey: kBoldUsername)
+        ud.setObject(nil, forKey: kBoldPassword)
+        ud.synchronize()
+        
         let destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Login")
         sideMenuController()?.setContentViewController(destViewController)
     }

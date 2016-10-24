@@ -15,8 +15,9 @@ var sessionInfo = NSDictionary()
 var monthlycache : NSMutableArray = []
 var bgNavigationColor = UIColor()
 var bgMainColor = UIColor()
+var logoName = String()
 
-var serverDomain = NSString()
+var serverDomain = String()
 var allPermisosData: [NSNumber: Int] = [:]
 var changedPermisosIds: [NSNumber] = []
 
@@ -39,6 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         color = NSBundle.mainBundle().objectForInfoDictionaryKey("BG_MAIN_COLOR") as! String
         bgMainColor = UIColor.init(hexString: color)
+        
+        logoName = NSBundle.mainBundle().objectForInfoDictionaryKey("BG_LOGO_NAME") as! String
         
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil))
         
@@ -74,6 +77,90 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(application: UIApplication) {
 //        NSNotificationCenter.defaultCenter().postNotificationName("PermisosListShouldRefresh", object: self)
+        
+        // Re-login again.
+        
+        self.autoLogin()
+        
+    }
+    
+    func autoLogin()
+    {
+        let ud = NSUserDefaults.standardUserDefaults()
+        let username = ud.objectForKey(kBoldUsername) as? String
+        let password = ud.objectForKey(kBoldPassword) as? String
+        
+        if username != nil && password != nil {
+            
+            let serverEndPoint = String.init(format: "%@/gpsnode/authenticate", serverDomain)
+            var workid = -1
+            if username != "" && password != "" {
+                
+                let request = NSMutableURLRequest(URL: NSURL(string: serverEndPoint)!)
+                // Setup the session to make REST POST call
+                let postParams : [String: AnyObject] = ["user": username!, "password":password!, "deviceID":"BOLDApp", "clientCode":"100001"]
+                
+                // Create the request
+                //            let request = NSMutableURLRequest(URL: url)
+                request.HTTPMethod = "POST"
+                request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
+                do {
+                    request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(postParams, options: NSJSONWritingOptions())
+                    print(postParams)
+                } catch {
+                    print("bad things happened")
+                }
+                
+                let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+                    
+                    guard error == nil && data != nil else {
+                        // check for fundamental networking error
+                        print("error=\(error)")
+                        return
+                    }
+                    
+                    if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
+                        // check for http errors
+                        print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                        print("response = \(response)")
+                    }
+                    
+                    do {
+                        if let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
+                            sessionInfo = jsonData
+                            
+                            if jsonData["user"] != nil {
+                                workid = jsonData["workerID"] as! Int
+                                user = jsonData["user"] as! String
+                                fullname = jsonData["fullName"] as! String
+                            }
+                        }
+                    } catch {
+                        print(error)
+                    }
+                    
+                    dispatch_async(dispatch_get_main_queue(), {
+                        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                        print(workid)
+                        if workid >= 0 {
+                        }
+                        else {
+                            
+                            // TODO: show login view controller
+                        }
+                    })
+                    
+                }
+                task.resume()
+                
+            }
+            else{
+                
+                // TODO: show login view controller
+                return;
+            }
+        }
+
     }
     
     func applicationWillResignActive(application: UIApplication) {

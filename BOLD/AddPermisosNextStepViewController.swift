@@ -49,6 +49,7 @@ class AddPermisosNextStepViewController: UIViewController, UITextFieldDelegate {
         self.nameLabel.text = name
         
         self.outputDateFormatter = NSDateFormatter()
+        self.createButton.backgroundColor = bgNavigationColor
 
         let cal = NSCalendar.currentCalendar()
         let currentYear = cal.component([NSCalendarUnit.Year], fromDate: NSDate())
