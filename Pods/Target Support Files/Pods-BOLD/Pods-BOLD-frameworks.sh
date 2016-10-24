@@ -97,7 +97,21 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/STZPopupView/STZPopupView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIView+JMFrame/UIView_JMFrame.framework"
 fi
-if [[ "$CONFIGURATION" == "Release beta" ]]; then
+if [[ "$CONFIGURATION" == "clientCSDM" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/HexColors/HexColors.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MJCalendar/MJCalendar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/NSDate-Escort/NSDate_Escort.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/STZPopupView/STZPopupView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UIView+JMFrame/UIView_JMFrame.framework"
+fi
+if [[ "$CONFIGURATION" == "clientPSSJD" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/HexColors/HexColors.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MJCalendar/MJCalendar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/NSDate-Escort/NSDate_Escort.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/STZPopupView/STZPopupView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/UIView+JMFrame/UIView_JMFrame.framework"
+fi
+if [[ "$CONFIGURATION" == "demoBOLDApp" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/HexColors/HexColors.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJCalendar/MJCalendar.framework"
   install_framework "$BUILT_PRODUCTS_DIR/NSDate-Escort/NSDate_Escort.framework"

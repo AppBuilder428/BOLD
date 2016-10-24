@@ -21,6 +21,10 @@
 		54C44CA91D7ED7A2006E98C5 /* ContadoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44CA71D7ED7A2006E98C5 /* ContadoresTableViewCell.swift */; };
 		54C44CAA1D7ED7A2006E98C5 /* ContadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44CA81D7ED7A2006E98C5 /* ContadoresViewController.swift */; };
 		54EB1F411DA2B1A2003675A2 /* PermisosDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB1F401DA2B1A2003675A2 /* PermisosDetailViewController.swift */; };
+		54FD3C101DBDBF100020242E /* logoCSDM.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD3C0C1DBDBF100020242E /* logoCSDM.png */; };
+		54FD3C111DBDBF100020242E /* logoPSSJD.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD3C0D1DBDBF100020242E /* logoPSSJD.png */; };
+		54FD3C141DBDC0B20020242E /* logoCSDM1.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD3C121DBDC0B20020242E /* logoCSDM1.png */; };
+		54FD3C151DBDC0B20020242E /* logoPSSJD1.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FD3C131DBDC0B20020242E /* logoPSSJD1.png */; };
 		5BFE74066405BCD27BAAD6BE /* Pods_BOLD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C4DF92D002DF1A78C046D2 /* Pods_BOLD.framework */; };
 		842ECFF41D12AD6E004663C0 /* SiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842ECFF31D12AD6E004663C0 /* SiteViewController.swift */; };
 		8453E01D1D0FB8450015DA28 /* PermisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453E01C1D0FB8450015DA28 /* PermisosViewController.swift */; };
@@ -65,6 +69,7 @@
 		0054E1492B42BF8D0C832DCC /* Pods-BOLD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.debug.xcconfig"; sourceTree = "<group>"; };
 		149DED4472E70FE28BC0FCC7 /* Pods-BOLDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDTests/Pods-BOLDTests.release.xcconfig"; sourceTree = "<group>"; };
 		1685DC230CF59DEAA609AC60 /* Pods-BOLDUITests.release copy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.release copy.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.release copy.xcconfig"; sourceTree = "<group>"; };
+		290843860FF6B54A1AC6D589 /* Pods-BOLD.demoboldapp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.demoboldapp.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.demoboldapp.xcconfig"; sourceTree = "<group>"; };
 		4B52FD08B2F82F0DA029DA4C /* Pods-BOLDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDTests/Pods-BOLDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5208E31D1D0F0EB700404C69 /* sampledata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampledata.txt; sourceTree = "<group>"; };
 		52C5DBDA1D0D654F00BC7F38 /* CalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
@@ -79,8 +84,14 @@
 		54C44CA71D7ED7A2006E98C5 /* ContadoresTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContadoresTableViewCell.swift; sourceTree = "<group>"; };
 		54C44CA81D7ED7A2006E98C5 /* ContadoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContadoresViewController.swift; sourceTree = "<group>"; };
 		54EB1F401DA2B1A2003675A2 /* PermisosDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermisosDetailViewController.swift; sourceTree = "<group>"; };
+		54FD3C0C1DBDBF100020242E /* logoCSDM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoCSDM.png; sourceTree = "<group>"; };
+		54FD3C0D1DBDBF100020242E /* logoPSSJD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoPSSJD.png; sourceTree = "<group>"; };
+		54FD3C121DBDC0B20020242E /* logoCSDM1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoCSDM1.png; sourceTree = "<group>"; };
+		54FD3C131DBDC0B20020242E /* logoPSSJD1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoPSSJD1.png; sourceTree = "<group>"; };
+		5AF62577C74F50AC1E8A5653 /* Pods-BOLDTests.clientpssjd.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDTests.clientpssjd.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDTests/Pods-BOLDTests.clientpssjd.xcconfig"; sourceTree = "<group>"; };
 		693A8C7757EB86C2613F3F36 /* Pods-BOLDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73A4201EACCFC871F75D01FD /* Pods-BOLD.release beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.release beta.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.release beta.xcconfig"; sourceTree = "<group>"; };
+		762577F2FE92A9F4BC0BD4EE /* Pods-BOLD.clientpssjd.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.clientpssjd.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.clientpssjd.xcconfig"; sourceTree = "<group>"; };
 		842ECFF31D12AD6E004663C0 /* SiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteViewController.swift; sourceTree = "<group>"; };
 		8453E01C1D0FB8450015DA28 /* PermisosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermisosViewController.swift; sourceTree = "<group>"; };
 		8453E01F1D0FB9000015DA28 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +121,14 @@
 		B0C4DF92D002DF1A78C046D2 /* Pods_BOLD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOLD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B538C39862166623CFF084AE /* Pods-BOLDUITests.release beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.release beta.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.release beta.xcconfig"; sourceTree = "<group>"; };
 		BD0F23263137B238C3388FB8 /* Pods-BOLD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.release.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.release.xcconfig"; sourceTree = "<group>"; };
+		C1F238FF9631A77871A3F20C /* Pods-BOLDUITests.demoboldapp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.demoboldapp.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.demoboldapp.xcconfig"; sourceTree = "<group>"; };
 		C70D2B48700DC656C6B54A92 /* Pods-BOLD.release copy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.release copy.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.release copy.xcconfig"; sourceTree = "<group>"; };
 		C90C6CE8FB20AF479C13082F /* Pods-BOLDTests.release copy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDTests.release copy.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDTests/Pods-BOLDTests.release copy.xcconfig"; sourceTree = "<group>"; };
+		C9166E0EB7F68186D612B5EB /* Pods-BOLDUITests.clientcsdm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.clientcsdm.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.clientcsdm.xcconfig"; sourceTree = "<group>"; };
+		D58D5225885132B47AAFB783 /* Pods-BOLDTests.clientcsdm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDTests.clientcsdm.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDTests/Pods-BOLDTests.clientcsdm.xcconfig"; sourceTree = "<group>"; };
+		E160E05CCEBE0906FF0EC32F /* Pods-BOLDTests.demoboldapp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDTests.demoboldapp.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDTests/Pods-BOLDTests.demoboldapp.xcconfig"; sourceTree = "<group>"; };
+		F129CDF6187A73C3FAE22BB4 /* Pods-BOLD.clientcsdm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.clientcsdm.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.clientcsdm.xcconfig"; sourceTree = "<group>"; };
+		F233B5CAE8CFD9E8C0B14BAB /* Pods-BOLDUITests.clientpssjd.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.clientpssjd.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.clientpssjd.xcconfig"; sourceTree = "<group>"; };
 		F48390A93C3FE8C6EC17767E /* Pods_BOLDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOLDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -282,6 +299,10 @@
 		84ECF1951D011C9300AA0794 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				54FD3C121DBDC0B20020242E /* logoCSDM1.png */,
+				54FD3C0C1DBDBF100020242E /* logoCSDM.png */,
+				54FD3C131DBDC0B20020242E /* logoPSSJD1.png */,
+				54FD3C0D1DBDBF100020242E /* logoPSSJD.png */,
 				84ECF1BD1D02196A00AA0794 /* logo1.png */,
 				84ECF1B31D016FCD00AA0794 /* logo.png */,
 			);
@@ -349,6 +370,15 @@
 				73A4201EACCFC871F75D01FD /* Pods-BOLD.release beta.xcconfig */,
 				004BDC9FB57C07D73652B21E /* Pods-BOLDTests.release beta.xcconfig */,
 				B538C39862166623CFF084AE /* Pods-BOLDUITests.release beta.xcconfig */,
+				F129CDF6187A73C3FAE22BB4 /* Pods-BOLD.clientcsdm.xcconfig */,
+				762577F2FE92A9F4BC0BD4EE /* Pods-BOLD.clientpssjd.xcconfig */,
+				290843860FF6B54A1AC6D589 /* Pods-BOLD.demoboldapp.xcconfig */,
+				D58D5225885132B47AAFB783 /* Pods-BOLDTests.clientcsdm.xcconfig */,
+				5AF62577C74F50AC1E8A5653 /* Pods-BOLDTests.clientpssjd.xcconfig */,
+				E160E05CCEBE0906FF0EC32F /* Pods-BOLDTests.demoboldapp.xcconfig */,
+				C9166E0EB7F68186D612B5EB /* Pods-BOLDUITests.clientcsdm.xcconfig */,
+				F233B5CAE8CFD9E8C0B14BAB /* Pods-BOLDUITests.clientpssjd.xcconfig */,
+				C1F238FF9631A77871A3F20C /* Pods-BOLDUITests.demoboldapp.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -470,12 +500,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FD3C141DBDC0B20020242E /* logoCSDM1.png in Resources */,
+				54FD3C101DBDBF100020242E /* logoCSDM.png in Resources */,
 				84ECF1B41D016FCD00AA0794 /* logo.png in Resources */,
 				84ECF16D1D01135900AA0794 /* LaunchScreen.storyboard in Resources */,
 				84ECF16A1D01135900AA0794 /* Assets.xcassets in Resources */,
 				84ECF1BE1D02196A00AA0794 /* logo1.png in Resources */,
+				54FD3C111DBDBF100020242E /* logoPSSJD.png in Resources */,
 				5208E31E1D0F0EB700404C69 /* sampledata.txt in Resources */,
 				84ECF1681D01135900AA0794 /* Main.storyboard in Resources */,
+				54FD3C151DBDC0B20020242E /* logoPSSJD1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,7 +749,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		543521CC1D77598E0023A8EB /* Release beta */ = {
+		543521CC1D77598E0023A8EB /* demoBOLDApp */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -757,19 +791,20 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Release beta";
+			name = demoBOLDApp;
 		};
-		543521CD1D77598E0023A8EB /* Release beta */ = {
+		543521CD1D77598E0023A8EB /* demoBOLDApp */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73A4201EACCFC871F75D01FD /* Pods-BOLD.release beta.xcconfig */;
+			baseConfigurationReference = 290843860FF6B54A1AC6D589 /* Pods-BOLD.demoboldapp.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				APP_ICON_NAME = PSSJDIcon;
-				APP_NAME = PSSJD;
+				APP_ICON_NAME = AppIconMain;
+				APP_NAME = BOLD;
 				ASSETCATALOG_COMPILER_APPICON_NAME = $APP_ICON_NAME;
-				BG_MAIN_COLOR = FFCDD2;
-				BG_NAVIGATION_COLOR = D32F2F;
-				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendar1;
+				BG_LOGO_NAME = logo;
+				BG_MAIN_COLOR = C8E6CA;
+				BG_NAVIGATION_COLOR = 388E3D;
+				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendar;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -784,11 +819,11 @@
 				SWIFT_VERSION = 2.3;
 				WEB_SERVICE_BASE_URL = "https://carpetalaboral.pssjd.org:8183";
 			};
-			name = "Release beta";
+			name = demoBOLDApp;
 		};
-		543521CE1D77598E0023A8EB /* Release beta */ = {
+		543521CE1D77598E0023A8EB /* demoBOLDApp */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 004BDC9FB57C07D73652B21E /* Pods-BOLDTests.release beta.xcconfig */;
+			baseConfigurationReference = E160E05CCEBE0906FF0EC32F /* Pods-BOLDTests.demoboldapp.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BOLDTests/Info.plist;
@@ -798,11 +833,11 @@
 				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BOLD.app/BOLD";
 			};
-			name = "Release beta";
+			name = demoBOLDApp;
 		};
-		543521CF1D77598E0023A8EB /* Release beta */ = {
+		543521CF1D77598E0023A8EB /* demoBOLDApp */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B538C39862166623CFF084AE /* Pods-BOLDUITests.release beta.xcconfig */;
+			baseConfigurationReference = C1F238FF9631A77871A3F20C /* Pods-BOLDUITests.demoboldapp.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BOLDUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -812,7 +847,205 @@
 				TEST_TARGET_NAME = BOLD;
 				USES_XCTRUNNER = YES;
 			};
-			name = "Release beta";
+			name = demoBOLDApp;
+		};
+		544EB3661DBD0FAA00F46FA7 /* clientPSSJD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ying cai (27RN9A9K53)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ying cai (27RN9A9K53)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c9128656-c136-4a2f-8946-fe9d57f09f9b";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = clientPSSJD;
+		};
+		544EB3671DBD0FAA00F46FA7 /* clientPSSJD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762577F2FE92A9F4BC0BD4EE /* Pods-BOLD.clientpssjd.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_ICON_NAME = PSSJDIcon;
+				APP_NAME = PSSJD;
+				ASSETCATALOG_COMPILER_APPICON_NAME = $APP_ICON_NAME;
+				BG_LOGO_NAME = logoPSSJD;
+				BG_MAIN_COLOR = FFCDD2;
+				BG_NAVIGATION_COLOR = D32F2F;
+				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendarPSSJD;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BOLD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bold.calendarTest;
+				PRODUCT_NAME = "$(APP_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
+				WEB_SERVICE_BASE_URL = "http://soporte.gps-plan.com";
+			};
+			name = clientPSSJD;
+		};
+		544EB3681DBD0FAA00F46FA7 /* clientPSSJD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF62577C74F50AC1E8A5653 /* Pods-BOLDTests.clientpssjd.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BOLDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BOLD.app/BOLD";
+			};
+			name = clientPSSJD;
+		};
+		544EB3691DBD0FAA00F46FA7 /* clientPSSJD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F233B5CAE8CFD9E8C0B14BAB /* Pods-BOLDUITests.clientpssjd.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = BOLDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = BOLD;
+				USES_XCTRUNNER = YES;
+			};
+			name = clientPSSJD;
+		};
+		544EB36A1DBD0FCF00F46FA7 /* clientCSDM */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ying cai (27RN9A9K53)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ying cai (27RN9A9K53)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c9128656-c136-4a2f-8946-fe9d57f09f9b";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = clientCSDM;
+		};
+		544EB36B1DBD0FCF00F46FA7 /* clientCSDM */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F129CDF6187A73C3FAE22BB4 /* Pods-BOLD.clientcsdm.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_ICON_NAME = AppIconMain;
+				APP_NAME = CSDM;
+				ASSETCATALOG_COMPILER_APPICON_NAME = $APP_ICON_NAME;
+				BG_LOGO_NAME = logoCSDM;
+				BG_MAIN_COLOR = C8E6CA;
+				BG_NAVIGATION_COLOR = 388E3D;
+				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendarCSDM;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BOLD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bold.calendarTest;
+				PRODUCT_NAME = "$(APP_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
+				WEB_SERVICE_BASE_URL = "http://soporte.gps-plan.com";
+			};
+			name = clientCSDM;
+		};
+		544EB36C1DBD0FCF00F46FA7 /* clientCSDM */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58D5225885132B47AAFB783 /* Pods-BOLDTests.clientcsdm.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BOLDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BOLD.app/BOLD";
+			};
+			name = clientCSDM;
+		};
+		544EB36D1DBD0FCF00F46FA7 /* clientCSDM */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9166E0EB7F68186D612B5EB /* Pods-BOLDUITests.clientcsdm.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = BOLDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.BOLDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = BOLD;
+				USES_XCTRUNNER = YES;
+			};
+			name = clientCSDM;
 		};
 		84ECF1851D01135900AA0794 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -914,6 +1147,7 @@
 				APP_ICON_NAME = AppIcon;
 				APP_NAME = BOLD;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconMain;
+				BG_LOGO_NAME = logo;
 				BG_MAIN_COLOR = C8E6CA;
 				BG_NAVIGATION_COLOR = 388E3D;
 				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendar;
@@ -942,6 +1176,7 @@
 				APP_ICON_NAME = AppIconMain;
 				APP_NAME = BOLD;
 				ASSETCATALOG_COMPILER_APPICON_NAME = $APP_ICON_NAME;
+				BG_LOGO_NAME = logo;
 				BG_MAIN_COLOR = C8E6CA;
 				BG_NAVIGATION_COLOR = 388E3D;
 				BUNDLE_IDENTIFIER_SUFFIX = com.bold.calendar;
@@ -1025,7 +1260,9 @@
 			buildConfigurations = (
 				84ECF1851D01135900AA0794 /* Debug */,
 				84ECF1861D01135900AA0794 /* Release */,
-				543521CC1D77598E0023A8EB /* Release beta */,
+				544EB36A1DBD0FCF00F46FA7 /* clientCSDM */,
+				544EB3661DBD0FAA00F46FA7 /* clientPSSJD */,
+				543521CC1D77598E0023A8EB /* demoBOLDApp */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1035,7 +1272,9 @@
 			buildConfigurations = (
 				84ECF1881D01135900AA0794 /* Debug */,
 				84ECF1891D01135900AA0794 /* Release */,
-				543521CD1D77598E0023A8EB /* Release beta */,
+				544EB36B1DBD0FCF00F46FA7 /* clientCSDM */,
+				544EB3671DBD0FAA00F46FA7 /* clientPSSJD */,
+				543521CD1D77598E0023A8EB /* demoBOLDApp */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1045,7 +1284,9 @@
 			buildConfigurations = (
 				84ECF18B1D01135900AA0794 /* Debug */,
 				84ECF18C1D01135900AA0794 /* Release */,
-				543521CE1D77598E0023A8EB /* Release beta */,
+				544EB36C1DBD0FCF00F46FA7 /* clientCSDM */,
+				544EB3681DBD0FAA00F46FA7 /* clientPSSJD */,
+				543521CE1D77598E0023A8EB /* demoBOLDApp */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1055,7 +1296,9 @@
 			buildConfigurations = (
 				84ECF18E1D01135900AA0794 /* Debug */,
 				84ECF18F1D01135900AA0794 /* Release */,
-				543521CF1D77598E0023A8EB /* Release beta */,
+				544EB36D1DBD0FCF00F46FA7 /* clientCSDM */,
+				544EB3691DBD0FAA00F46FA7 /* clientPSSJD */,
+				543521CF1D77598E0023A8EB /* demoBOLDApp */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

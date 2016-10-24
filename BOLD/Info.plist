@@ -6,6 +6,8 @@
 	<string>${BG_MAIN_COLOR}</string>
 	<key>BG_NAVIGATION_COLOR</key>
 	<string>${BG_NAVIGATION_COLOR}</string>
+	<key>BG_LOGO_NAME</key>
+	<string>${BG_LOGO_NAME}</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

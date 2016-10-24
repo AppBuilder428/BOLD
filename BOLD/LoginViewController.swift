@@ -8,12 +8,22 @@
 
 import UIKit
 
+let kBoldUsername:String = "BOLDUsername"
+let kBoldPassword:String = "BOLDPassword"
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernametxt: UITextField!
     @IBOutlet weak var passwordtxt: UITextField!
     @IBOutlet weak var statusView: UIView!
     @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var saveAccountButton: UIButton!
+
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+
+    var savePassword: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +31,32 @@ class LoginViewController: UIViewController {
         
         self.statusView.backgroundColor = bgNavigationColor
         self.backgroundView.backgroundColor = bgMainColor
-        
+        self.loginButton.backgroundColor = bgNavigationColor
+        self.logoImageView.image = UIImage.init(named: String.init(format: "%@.png", logoName))
+
         user = ""
         fullname = ""
         
-                usernametxt.text = "testapp"
-                passwordtxt.text = "testapp"
+        let ud = NSUserDefaults.standardUserDefaults()
+        let username = ud.objectForKey(kBoldUsername) as? String
+        let password = ud.objectForKey(kBoldPassword) as? String
+        
+        self.usernametxt.text = username
+        self.passwordtxt.text = password
+        
+        if username != nil && password != nil {
+            self.savePassword = true
+            
+            self.saveAccountButton.setImage(UIImage.init(named: "icon_checked"), forState: UIControlState.Normal)
 
+            self.enterButton(self)
+        }
+        else {
+            self.savePassword = false
+            
+            self.saveAccountButton.setImage(UIImage.init(named: "icon_uncheck"), forState: UIControlState.Normal)
+        }
+        
         // Do any additional setup after loading the view.
     }
 
@@ -45,15 +74,20 @@ class LoginViewController: UIViewController {
         return false
     }
     
+    @IBAction func saveAccountButtonClickButton(sender: AnyObject) {
+        
+        self.savePassword = !self.savePassword;
+        
+        if (self.savePassword == true) {
+            self.saveAccountButton.setImage(UIImage.init(named: "icon_checked"), forState: UIControlState.Normal)
+        }
+        else {
+            self.saveAccountButton.setImage(UIImage.init(named: "icon_uncheck"), forState: UIControlState.Normal)
+        }
+    }
+    
     @IBAction func enterButton(sender: AnyObject) {
         
-//        let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainview") as UIViewController
-//        self.presentViewController(viewController, animated: true, completion: nil)
-//        return
-        
-//        usernametxt.text = "testapp"
-//        passwordtxt.text = "testapp"
-
         let serverEndPoint = String.init(format: "%@/gpsnode/authenticate", serverDomain)
         let username = usernametxt.text! as String
         let password = passwordtxt.text! as String
@@ -75,8 +109,14 @@ class LoginViewController: UIViewController {
                 print("bad things happened")
             }
             
-            
+            self.indicator .startAnimating()
+
             let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.indicator .stopAnimating()
+                })
+
                 guard error == nil && data != nil else {
                     // check for fundamental networking error
                     print("error=\(error)")
@@ -92,11 +132,25 @@ class LoginViewController: UIViewController {
                 do {
                     if let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
                         sessionInfo = jsonData
-                    
+                        
                         if jsonData["user"] != nil {
                             workid = jsonData["workerID"] as! Int
                             user = jsonData["user"] as! String
                             fullname = jsonData["fullName"] as! String
+                            
+                            if (self.savePassword == true) {
+                                let ud = NSUserDefaults.standardUserDefaults()
+                                ud.setObject(username, forKey: kBoldUsername)
+                                ud.setObject(password, forKey: kBoldPassword)
+                                ud.synchronize()
+                            }
+                            else {
+                                let ud = NSUserDefaults.standardUserDefaults()
+                                ud.setObject(nil, forKey: kBoldUsername)
+                                ud.setObject(nil, forKey: kBoldPassword)
+                                ud.synchronize()
+
+                            }
                         }
                     }
                 } catch {
@@ -107,10 +161,8 @@ class LoginViewController: UIViewController {
                     UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                     print(workid)
                     if workid >= 0 {
-                    // Masquer l'icône de chargement dans la barre de status
-                    
-                    
-                    
+                        // Masquer l'icône de chargement dans la barre de status
+                        
                         let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainview") as UIViewController
                         self.presentViewController(viewController, animated: true, completion: nil)
                     }
@@ -126,7 +178,7 @@ class LoginViewController: UIViewController {
                 
             }
             task.resume()
-     
+            
         }
         else{
             let checkfailed = UIAlertController(title: "Input Error", message: "All fields are required!", preferredStyle: UIAlertControllerStyle.Alert)
@@ -136,7 +188,6 @@ class LoginViewController: UIViewController {
             self.presentViewController(checkfailed, animated: true, completion: nil)
             return;
         }
-
     }
 
 //    func makeHTTPPostRequest(path: String, body: [String: AnyObject], onCompletion: ServiceResponse) {
