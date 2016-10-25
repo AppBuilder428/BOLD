@@ -102,7 +102,7 @@
                                     <constraint firstAttribute="height" constant="25" id="Swv-Xa-F8X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="  Remember credential" image="icon_uncheck">
+                                <state key="normal" title="  Mantener sesión abierta" image="icon_uncheck">
                                     <color key="titleColor" red="0.21327501660000001" green="0.21327501660000001" blue="0.21327501660000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
