@@ -69,9 +69,13 @@ class MenuViewController: UIViewController {
         monthlycache.removeAllObjects();
         
         let ud = NSUserDefaults.standardUserDefaults()
-        ud.setObject(nil, forKey: kBoldUsername)
         ud.setObject(nil, forKey: kBoldPassword)
         ud.synchronize()
+
+        timer.invalidate()
+        
+        timerActive?.invalidate()
+        timerActive = nil
         
         let destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Login")
         sideMenuController()?.setContentViewController(destViewController)

@@ -60,6 +60,30 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let ud = NSUserDefaults.standardUserDefaults()
+        let username = ud.objectForKey(kBoldUsername) as? String
+        let password = ud.objectForKey(kBoldPassword) as? String
+        
+        self.usernametxt.text = username
+        self.passwordtxt.text = password
+        
+        if username != nil && password != nil {
+            self.savePassword = true
+            
+            self.saveAccountButton.setImage(UIImage.init(named: "icon_checked"), forState: UIControlState.Normal)
+            
+            self.enterButton(self)
+        }
+        else {
+            self.savePassword = false
+            
+            self.saveAccountButton.setImage(UIImage.init(named: "icon_uncheck"), forState: UIControlState.Normal)
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -145,11 +169,18 @@ class LoginViewController: UIViewController {
                                 ud.synchronize()
                             }
                             else {
+                                
                                 let ud = NSUserDefaults.standardUserDefaults()
-                                ud.setObject(nil, forKey: kBoldUsername)
                                 ud.setObject(nil, forKey: kBoldPassword)
                                 ud.synchronize()
-
+                                
+                                dispatch_async(dispatch_get_main_queue(), {
+                                    timerActive?.invalidate()
+                                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                                    
+//                                    timerActive = NSTimer.scheduledTimerWithTimeInterval(5 * 60 * 60, target: appDelegate, selector: #selector(AppDelegate.showLoginView), userInfo: nil, repeats: false)
+                                      timerActive = NSTimer.scheduledTimerWithTimeInterval(10, target: appDelegate, selector: #selector(AppDelegate.showLoginView), userInfo: nil, repeats: false)
+                                })
                             }
                         }
                     }
@@ -190,6 +221,7 @@ class LoginViewController: UIViewController {
         }
     }
 
+    
 //    func makeHTTPPostRequest(path: String, body: [String: AnyObject], onCompletion: ServiceResponse) {
 //        var err: NSError?
 //        let request = NSMutableURLRequest(URL: NSURL(string: path)!)

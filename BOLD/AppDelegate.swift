@@ -22,6 +22,7 @@ var allPermisosData: [NSNumber: Int] = [:]
 var changedPermisosIds: [NSNumber] = []
 
 var timer = NSTimer()
+var timerActive: NSTimer?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -50,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // TODO: FOR DEMO MODE
         timer = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: #selector(loadPermissionData), userInfo: nil, repeats: true)
+        
 
 //        if let _ = launchOptions {
 //            if let result = launchOptions![UIApplicationLaunchOptionsLocalNotificationKey]{
@@ -80,7 +82,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Re-login again.
         
-        self.autoLogin()
         
     }
     
@@ -91,6 +92,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let password = ud.objectForKey(kBoldPassword) as? String
         
         if username != nil && password != nil {
+            
+            return;
             
             let serverEndPoint = String.init(format: "%@/gpsnode/authenticate", serverDomain)
             var workid = -1
@@ -160,12 +163,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return;
             }
         }
+        else {
+            
+            // Show login view
+            let controller = self.window?.rootViewController;
+            controller?.dismissViewControllerAnimated(false, completion: nil)
+        }
 
     }
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        self.autoLogin()
+
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
@@ -184,6 +195,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    
+    func showLoginView(sender: AnyObject) {
+        
+        timer.invalidate()
+
+        timerActive?.invalidate()
+        timerActive = nil
+
+        let controller = self.window?.rootViewController;
+        controller?.dismissViewControllerAnimated(false, completion: nil)
+
+    }
     
     func loadPermissionData() {
         
@@ -221,7 +244,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
                 // check for http errors
                 print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                print("response = \(response)")
+//                print("response = \(response)")
             }
             
             do {
@@ -247,10 +270,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func savePermisorData(permisosData: [NSDictionary]) {
         
         allPermisosData.removeAll()
-        let permisosDataCount = permisosData.count
-        if (permisosDataCount == 0){
-            return;
-        }
+        
         for i in 0...permisosData.count - 1 {
             
             let data = permisosData[i] as NSDictionary

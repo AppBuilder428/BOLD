@@ -30,7 +30,7 @@
 		8453E01D1D0FB8450015DA28 /* PermisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453E01C1D0FB8450015DA28 /* PermisosViewController.swift */; };
 		8453E0201D0FB9000015DA28 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453E01F1D0FB9000015DA28 /* PersonalViewController.swift */; };
 		84ECF1631D01135900AA0794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECF1621D01135900AA0794 /* AppDelegate.swift */; };
-		84ECF1651D01135900AA0794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECF1641D01135900AA0794 /* ViewController.swift */; };
+		84ECF1651D01135900AA0794 /* MyApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECF1641D01135900AA0794 /* MyApplication.swift */; };
 		84ECF1681D01135900AA0794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ECF1661D01135900AA0794 /* Main.storyboard */; };
 		84ECF16A1D01135900AA0794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ECF1691D01135900AA0794 /* Assets.xcassets */; };
 		84ECF16D1D01135900AA0794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ECF16B1D01135900AA0794 /* LaunchScreen.storyboard */; };
@@ -97,7 +97,7 @@
 		8453E01F1D0FB9000015DA28 /* PersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		84ECF15F1D01135900AA0794 /* BOLD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOLD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ECF1621D01135900AA0794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84ECF1641D01135900AA0794 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84ECF1641D01135900AA0794 /* MyApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApplication.swift; sourceTree = "<group>"; };
 		84ECF1671D01135900AA0794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84ECF1691D01135900AA0794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84ECF16C1D01135900AA0794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -328,7 +328,7 @@
 			children = (
 				5208E31D1D0F0EB700404C69 /* sampledata.txt */,
 				84ECF1621D01135900AA0794 /* AppDelegate.swift */,
-				84ECF1641D01135900AA0794 /* ViewController.swift */,
+				84ECF1641D01135900AA0794 /* MyApplication.swift */,
 				84ECF1691D01135900AA0794 /* Assets.xcassets */,
 				84ECF16E1D01135900AA0794 /* Info.plist */,
 			);
@@ -689,7 +689,7 @@
 				84ECF1B01D01383900AA0794 /* ENSideMenuNavigationController.swift in Sources */,
 				52C5DBE01D0D654F00BC7F38 /* CalendarView.swift in Sources */,
 				52C5DBDE1D0D654F00BC7F38 /* CalendarDayCell.swift in Sources */,
-				84ECF1651D01135900AA0794 /* ViewController.swift in Sources */,
+				84ECF1651D01135900AA0794 /* MyApplication.swift in Sources */,
 				542C86D91D68642700CE231B /* AddPermisosViewController.swift in Sources */,
 				84ECF1631D01135900AA0794 /* AppDelegate.swift in Sources */,
 				84ECF19C1D011DC800AA0794 /* MainViewController.swift in Sources */,
