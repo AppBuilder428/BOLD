@@ -179,7 +179,7 @@ class LoginViewController: UIViewController {
                                     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                                     
 //                                    timerActive = NSTimer.scheduledTimerWithTimeInterval(5 * 60 * 60, target: appDelegate, selector: #selector(AppDelegate.showLoginView), userInfo: nil, repeats: false)
-                                      timerActive = NSTimer.scheduledTimerWithTimeInterval(10, target: appDelegate, selector: #selector(AppDelegate.showLoginView), userInfo: nil, repeats: false)
+                                      timerActive = NSTimer.scheduledTimerWithTimeInterval(5*60, target: appDelegate, selector: #selector(AppDelegate.showLoginView), userInfo: nil, repeats: false)
                                 })
                             }
                         }
