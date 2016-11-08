@@ -52,6 +52,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPrincipalClass</key>
+	<string>MyApplication</string>
 	<key>WEB_SERVICE_BASE_URL</key>
 	<string>${WEB_SERVICE_BASE_URL}</string>
 </dict>
