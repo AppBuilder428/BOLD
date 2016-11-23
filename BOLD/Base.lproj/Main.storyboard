@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="KFs-4v-vX1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="KFs-4v-vX1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -102,7 +102,7 @@
                                     <constraint firstAttribute="height" constant="25" id="Swv-Xa-F8X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="  Mantener sesión abierta" image="icon_uncheck">
+                                <state key="normal" title="  Remember credential" image="icon_uncheck">
                                     <color key="titleColor" red="0.21327501660000001" green="0.21327501660000001" blue="0.21327501660000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -1630,8 +1630,8 @@
                                     <constraint firstAttribute="height" constant="54" id="AhK-f8-ahZ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitar nuevo permiso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-87-DZE">
-                                <rect key="frame" x="61" y="26" width="179" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soliciatar nuevo permiso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-87-DZE">
+                                <rect key="frame" x="61" y="26" width="188" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="0XV-X5-3SG"/>
                                 </constraints>
@@ -2384,7 +2384,7 @@
         <image name="icon_calendar" width="26" height="26"/>
         <image name="icon_order" width="20" height="20"/>
         <image name="icon_uncheck" width="22" height="22"/>
-        <image name="logo.png" width="1000" height="384"/>
+        <image name="logo.png" width="1293" height="507"/>
         <image name="logo1.png" width="274" height="116"/>
         <image name="menu" width="25" height="23"/>
         <image name="power" width="15" height="15"/>
