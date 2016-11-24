@@ -45,6 +45,8 @@
 		84ECF1BA1D02132F00AA0794 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECF1B91D02132F00AA0794 /* MenuViewController.swift */; };
 		84ECF1BE1D02196A00AA0794 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ECF1BD1D02196A00AA0794 /* logo1.png */; };
 		A63939942F1D889564E5F2E3 /* Pods_BOLDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998C743D402891D2C03A2A69 /* Pods_BOLDUITests.framework */; };
+		F499728A1DE5CE4B00FB2637 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49972881DE5CE4B00FB2637 /* Fabric.framework */; };
+		F499728B1DE5CE4B00FB2637 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49972891DE5CE4B00FB2637 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,8 @@
 		F129CDF6187A73C3FAE22BB4 /* Pods-BOLD.clientcsdm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLD.clientcsdm.xcconfig"; path = "Pods/Target Support Files/Pods-BOLD/Pods-BOLD.clientcsdm.xcconfig"; sourceTree = "<group>"; };
 		F233B5CAE8CFD9E8C0B14BAB /* Pods-BOLDUITests.clientpssjd.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOLDUITests.clientpssjd.xcconfig"; path = "Pods/Target Support Files/Pods-BOLDUITests/Pods-BOLDUITests.clientpssjd.xcconfig"; sourceTree = "<group>"; };
 		F48390A93C3FE8C6EC17767E /* Pods_BOLDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOLDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49972881DE5CE4B00FB2637 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		F49972891DE5CE4B00FB2637 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BFE74066405BCD27BAAD6BE /* Pods_BOLD.framework in Frameworks */,
+				F499728B1DE5CE4B00FB2637 /* Crashlytics.framework in Frameworks */,
+				F499728A1DE5CE4B00FB2637 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +245,8 @@
 		84ECF1561D01135900AA0794 = {
 			isa = PBXGroup;
 			children = (
+				F49972881DE5CE4B00FB2637 /* Fabric.framework */,
+				F49972891DE5CE4B00FB2637 /* Crashlytics.framework */,
 				84ECF1611D01135900AA0794 /* BOLD */,
 				84ECF1761D01135900AA0794 /* BOLDTests */,
 				84ECF1811D01135900AA0794 /* BOLDUITests */,
@@ -396,6 +404,7 @@
 				84ECF15D1D01135900AA0794 /* Resources */,
 				44705AA73557C55370BAEA06 /* [CP] Embed Pods Frameworks */,
 				ED957944E5A10C8378E39B9F /* [CP] Copy Pods Resources */,
+				F49972871DE5CE3500FB2637 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -650,6 +659,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BOLD/Pods-BOLD-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F49972871DE5CE3500FB2637 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b7949a245a73712437b506fb2d117d788064a81c f9f2a6793971b71b9880a7164cf6a6e83e1229eb9765337169be825fac1aa167";
+		};
 		FA16B622A81B927582A5861A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -809,6 +831,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VK6PRMTH9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -909,10 +935,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VK6PRMTH9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gps-plan.BOLDAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gps-plan.com.PSSJD";
 				PRODUCT_NAME = "$(APP_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -1009,6 +1039,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VK6PRMTH9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1158,6 +1192,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VK6PRMTH9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1188,6 +1226,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VK6PRMTH9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BOLD/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

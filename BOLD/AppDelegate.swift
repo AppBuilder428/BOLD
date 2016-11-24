@@ -8,6 +8,9 @@
 
 import UIKit
 import Foundation
+import Fabric
+import Crashlytics
+
 
 var fullname = ""
 var user = ""
@@ -60,6 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                
 //            }
 //        }
+        Fabric.with([Crashlytics.self])
         return true
     }
     

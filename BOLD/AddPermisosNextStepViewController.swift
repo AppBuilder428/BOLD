@@ -10,6 +10,8 @@
 
 import UIKit
 import STZPopupView
+import Fabric
+import Crashlytics
 
 class AddPermisosNextStepViewController: UIViewController, UITextFieldDelegate {
     
@@ -251,12 +253,16 @@ class AddPermisosNextStepViewController: UIViewController, UITextFieldDelegate {
                     if let _ = jsonData["err"] {
                         let errMessage = jsonData["err"] as! String
                         dispatch_async(dispatch_get_main_queue(), {
+                            Answers.logCustomEventWithName("requestPermissionFailed", customAttributes: nil)
                             
                             self.showErrorMessage(errMessage)
                         })
                     }
                     else {
+                        Answers.logCustomEventWithName("requestPermissionOK", customAttributes: nil)
+                        
                         dispatch_async(dispatch_get_main_queue(), {
+                            
                             
                             let viewcontroller = self.navigationController?.viewControllers.first
                             let str =  NSStringFromClass(viewcontroller!.dynamicType).componentsSeparatedByString(".").last!

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 let kBoldUsername:String = "BOLDUsername"
 let kBoldPassword:String = "BOLDPassword"
@@ -193,11 +194,16 @@ class LoginViewController: UIViewController {
                     print(workid)
                     if workid >= 0 {
                         // Masquer l'icône de chargement dans la barre de status
-                        
+                        Answers.logLoginWithMethod("Manual",
+                            success: true,
+                            customAttributes: nil)
                         let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("mainview") as UIViewController
                         self.presentViewController(viewController, animated: true, completion: nil)
                     }
                     else {
+                        Answers.logLoginWithMethod("Manual",
+                            success: false,
+                            customAttributes: nil)
                         let checkfailed = UIAlertController(title: "Input Error", message: "Username or Password is invalid", preferredStyle: UIAlertControllerStyle.Alert)
                         
                         checkfailed.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
