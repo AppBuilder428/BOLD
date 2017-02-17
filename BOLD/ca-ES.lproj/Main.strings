@@ -1,0 +1,249 @@
+
+/* Class = "UILabel"; text = "Grupo"; ObjectID = "08s-If-qi3"; */
+"08s-If-qi3.text" = "Grup";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "09i-I5-lEx"; */
+"09i-I5-lEx.text" = "Hora";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "0d9-k3-xeS"; */
+"0d9-k3-xeS.text" = "Fins";
+
+/* Class = "UIButton"; normalTitle = "Estado"; ObjectID = "2IA-pp-en1"; */
+"2IA-pp-en1.normalTitle" = "Estat";
+
+/* Class = "UIButton"; normalTitle = "SIGUIENTE"; ObjectID = "2Ll-PI-ezN"; */
+"2Ll-PI-ezN.normalTitle" = "Següent";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "3NL-qw-0E4"; */
+"3NL-qw-0E4.text" = "Fins";
+
+/* Class = "UILabel"; text = "Datos personales"; ObjectID = "3Zc-0H-ndf"; */
+"3Zc-0H-ndf.text" = "Dades personals";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3l7-rc-rUs"; */
+"3l7-rc-rUs.text" = "Etiqueta";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "48f-eP-UFL"; */
+"48f-eP-UFL.text" = "Des de";
+
+/* Class = "UIViewController"; title = "AddPermisosNextStepViewController"; ObjectID = "4Yq-Vf-VXr"; */
+"4Yq-Vf-VXr.title" = "AddPermisosNextStepViewController";
+
+/* Class = "UIButton"; normalTitle = "24:00"; ObjectID = "4fu-O3-ljv"; */
+"4fu-O3-ljv.normalTitle" = "24:00";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "4jA-1C-vjW"; */
+"4jA-1C-vjW.text" = "Valor";
+
+/* Class = "UILabel"; text = "Día completo"; ObjectID = "4st-xk-oU8"; */
+"4st-xk-oU8.text" = "Dia sencer";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "5k0-6b-h6P"; */
+"5k0-6b-h6P.text" = "Hora";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6Xv-Vd-sJL"; */
+"6Xv-Vd-sJL.text" = "Etiqueta";
+
+/* Class = "UILabel"; text = "Contadores"; ObjectID = "72D-84-y9x"; */
+"72D-84-y9x.text" = "Comptadors";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7Ri-je-o6m"; */
+"7Ri-je-o6m.text" = "Etiqueta";
+
+/* Class = "UILabel"; text = "Disponible"; ObjectID = "882-Br-mzc"; */
+"882-Br-mzc.text" = "Disponible";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "APU-cK-7sY"; */
+"APU-cK-7sY.text" = "Fins";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "AS1-6O-0kO"; */
+"AS1-6O-0kO.text" = "Títol";
+
+/* Class = "UIButton"; normalTitle = "Seleccione un Grupo"; ObjectID = "B0f-s8-nTB"; */
+"B0f-s8-nTB.normalTitle" = "Seleccioni un Grup";
+
+/* Class = "UIButton"; normalTitle = "00:00"; ObjectID = "Ck4-98-msL"; */
+"Ck4-98-msL.normalTitle" = "00:00";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "DAm-o3-hyo"; */
+"DAm-o3-hyo.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "0.0h"; ObjectID = "Djm-NJ-LLO"; */
+"Djm-NJ-LLO.text" = "0.0h";
+
+/* Class = "UILabel"; text = "Permisos"; ObjectID = "ESg-YO-toJ"; */
+"ESg-YO-toJ.text" = "Permisos";
+
+/* Class = "UITextField"; placeholder = "UserName"; ObjectID = "Fig-Fh-eAA"; */
+"Fig-Fh-eAA.placeholder" = "Nom d'Usuari";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "GUx-Z9-xAH"; */
+"GUx-Z9-xAH.text" = "Fins";
+
+/* Class = "UIButton"; normalTitle = "ENTER"; ObjectID = "Gec-MS-LDQ"; */
+"Gec-MS-LDQ.normalTitle" = "ENTRAR";
+
+/* Class = "UIButton"; normalTitle = "Último Cambio "; ObjectID = "Hyx-KD-1D8"; */
+"Hyx-KD-1D8.normalTitle" = "Últim Canvi";
+
+/* Class = "UIButton"; normalTitle = "Desde"; ObjectID = "Iny-Xm-rvg"; */
+"Iny-Xm-rvg.normalTitle" = "Des de";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "KmQ-ep-TWa"; */
+"KmQ-ep-TWa.text" = "Des de";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "Kyz-3o-ev1"; */
+"Kyz-3o-ev1.text" = "Des de";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "L9d-lM-tnI"; */
+"L9d-lM-tnI.text" = "Des de";
+
+/* Class = "UILabel"; text = "Nota: "; ObjectID = "Lse-ve-k2k"; */
+"Lse-ve-k2k.text" = "Nota: ";
+
+/* Class = "UILabel"; text = "Tipo"; ObjectID = "MNf-Lc-V46"; */
+"MNf-Lc-V46.text" = "Tipus";
+
+/* Class = "UILabel"; text = "2016"; ObjectID = "NXZ-9q-ldR"; */
+"NXZ-9q-ldR.text" = "2016";
+
+/* Class = "UILabel"; text = "Global Planning Solutions"; ObjectID = "P4N-44-6eX"; */
+"P4N-44-6eX.text" = "Global Planning Solutions";
+
+/* Class = "UILabel"; text = "Fecha de cambio:"; ObjectID = "P5s-Il-21z"; */
+"P5s-Il-21z.text" = "Data de canvi:";
+
+/* Class = "UIViewController"; title = "AddPermisosViewController"; ObjectID = "P9V-hG-pSR"; */
+"P9V-hG-pSR.title" = "AddPermisosViewController";
+
+/* Class = "UILabel"; text = "Calendario"; ObjectID = "PPo-5S-4aG"; */
+"PPo-5S-4aG.text" = "Calendari";
+
+/* Class = "UILabel"; text = "Cerrar sesion"; ObjectID = "Q24-eS-2vX"; */
+"Q24-eS-2vX.text" = "Tancar sessió";
+
+/* Class = "UILabel"; text = "CO"; ObjectID = "QWs-Io-IvP"; */
+"QWs-Io-IvP.text" = "CO";
+
+/* Class = "UIButton"; normalTitle = "http://www.gps-plan.com"; ObjectID = "SLX-nH-5yD"; */
+"SLX-nH-5yD.normalTitle" = "http://www.gps-plan.com";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "ShB-Ln-iMc"; */
+"ShB-Ln-iMc.text" = "Fins";
+
+/* Class = "UIButton"; normalTitle = "Hasta"; ObjectID = "VUb-2c-M2v"; */
+"VUb-2c-M2v.normalTitle" = "Fins";
+
+/* Class = "UILabel"; text = "CO"; ObjectID = "Vn6-eg-Wsu"; */
+"Vn6-eg-Wsu.text" = "CO";
+
+/* Class = "UILabel"; text = "June 2016"; ObjectID = "XEn-n8-AKu"; */
+"XEn-n8-AKu.text" = "Juny 2016";
+
+/* Class = "UILabel"; text = "0.0h"; ObjectID = "Z17-lP-W9B"; */
+"Z17-lP-W9B.text" = "0.0h";
+
+/* Class = "UILabel"; text = "  "; ObjectID = "az8-r3-M7W"; */
+"az8-r3-M7W.text" = "  ";
+
+/* Class = "UILabel"; text = " Pendiente"; ObjectID = "cC2-tT-Gw4"; */
+"cC2-tT-Gw4.text" = " Pendent";
+
+/* Class = "UILabel"; text = "0.0h"; ObjectID = "dG4-ql-060"; */
+"dG4-ql-060.text" = "0.0h";
+
+/* Class = "UILabel"; text = "Calendario"; ObjectID = "eFQ-vA-mNj"; */
+"eFQ-vA-mNj.text" = "Calendari";
+
+/* Class = "UILabel"; text = "CO"; ObjectID = "ec3-yh-dNr"; */
+"ec3-yh-dNr.text" = "CO";
+
+/* Class = "UIButton"; normalTitle = "Seleccione un tipo"; ObjectID = "eru-Ov-hcz"; */
+"eru-Ov-hcz.normalTitle" = "Seleccioni un tipus";
+
+/* Class = "UILabel"; text = "Permitido"; ObjectID = "gFd-Qc-Sc1"; */
+"gFd-Qc-Sc1.text" = "Permès";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gvD-Zy-CeO"; */
+"gvD-Zy-CeO.text" = "Etiqueta";
+
+/* Class = "UILabel"; text = "Permisos"; ObjectID = "ims-KO-Ty9"; */
+"ims-KO-Ty9.text" = "Permisos";
+
+/* Class = "UILabel"; text = " Pendiente"; ObjectID = "iuy-22-MU4"; */
+"iuy-22-MU4.text" = " Pendent";
+
+/* Class = "UILabel"; text = "Contadores"; ObjectID = "iw1-Ca-C6m"; */
+"iw1-Ca-C6m.text" = "Comptadors";
+
+/* Class = "UILabel"; text = "GPS"; ObjectID = "jgA-CV-mTz"; */
+"jgA-CV-mTz.text" = "GPS";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "l2q-jD-cg6"; */
+"l2q-jD-cg6.text" = "Des de";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "l4b-2O-Lve"; */
+"l4b-2O-Lve.placeholder" = "Contrasenya";
+
+/* Class = "UIButton"; normalTitle = "  Mantener sesión abierta"; ObjectID = "lF1-IF-sPw"; */
+"lF1-IF-sPw.normalTitle" = "  Mantenir sessió oberta";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "mPq-8W-IYA"; */
+"mPq-8W-IYA.text" = "Des de";
+
+/* Class = "UILabel"; text = "Permisos"; ObjectID = "mjL-E9-fkf"; */
+"mjL-E9-fkf.text" = "Permisos";
+
+/* Class = "UILabel"; text = "Solicitado"; ObjectID = "mk3-6v-lzF"; */
+"mk3-6v-lzF.text" = "Sol·licitat";
+
+/* Class = "UIButton"; normalTitle = "Anadir una nota"; ObjectID = "mzf-N6-FRY"; */
+"mzf-N6-FRY.normalTitle" = "Afegir una nota";
+
+/* Class = "UILabel"; text = "Datos personales"; ObjectID = "nrM-Y1-LxL"; */
+"nrM-Y1-LxL.text" = "Dades personals";
+
+/* Class = "UIButton"; normalTitle = "Inicio del permiso  "; ObjectID = "pk8-v4-8cf"; */
+"pk8-v4-8cf.normalTitle" = "Inici del permís";
+
+/* Class = "UILabel"; text = "Disfrutado"; ObjectID = "plZ-1K-TCC"; */
+"plZ-1K-TCC.text" = "Gaudit";
+
+/* Class = "UIButton"; normalTitle = "ELIMINAR"; ObjectID = "qgH-Kr-g7c"; */
+"qgH-Kr-g7c.normalTitle" = "ELIMINAR";
+
+/* Class = "UILabel"; text = "0.0h"; ObjectID = "sfD-Or-8Gv"; */
+"sfD-Or-8Gv.text" = "0.0h";
+
+/* Class = "UILabel"; text = "Solicitar nuevo permiso"; ObjectID = "t6q-9F-dfy"; */
+"t6q-9F-dfy.text" = "Sol·licitar nou permís";
+
+/* Class = "UILabel"; text = "#"; ObjectID = "tE3-qA-Sz8"; */
+"tE3-qA-Sz8.text" = "#";
+
+/* Class = "UILabel"; text = "Solicitar nuevo permiso"; ObjectID = "tEO-87-DZE"; */
+"tEO-87-DZE.text" = "Sol·licitar nou permís";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "tki-do-HhD"; */
+"tki-do-HhD.text" = "Fins";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "vDW-zQ-3I9"; */
+"vDW-zQ-3I9.text" = "Fins";
+
+/* Class = "UIButton"; normalTitle = "SIGUIENTE"; ObjectID = "wUI-3h-ZZN"; */
+"wUI-3h-ZZN.normalTitle" = "Següent";
+
+/* Class = "UILabel"; text = "Nota:"; ObjectID = "xKf-OL-dSg"; */
+"xKf-OL-dSg.text" = "Nota:";
+
+/* Class = "UILabel"; text = "Desde"; ObjectID = "xX8-q9-uGo"; */
+"xX8-q9-uGo.text" = "Des de";
+
+/* Class = "UILabel"; text = "Datos Profesionales"; ObjectID = "yFd-AD-5O8"; */
+"yFd-AD-5O8.text" = "Dades Professionals";
+
+/* Class = "UILabel"; text = "Vacaciones"; ObjectID = "ys4-Co-7Dv"; */
+"ys4-Co-7Dv.text" = "Vacances";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zyu-5i-drQ"; */
+"zyu-5i-drQ.text" = "Etiqueta";
